@@ -1,0 +1,11 @@
+no
+enable 
+configure terminal
+interface gigabitEthernet 0/0/0
+no shutdown
+ip address 192.168.1.1 255.255.255.0
+ip dhcp pool abc
+network 192.168.1.1 255.255.255.0
+default-router 192.168.1.1
+dns-server 8.8.8.8
+ex
